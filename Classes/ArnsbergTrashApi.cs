@@ -247,7 +247,7 @@ namespace AbfallAlarm_Backend.Classes
             logger.Trace($"Starte FetchDataAsync für Endpoint: {endpoint}");
             if (serverEncoding == null)
             {
-                serverEncoding = Encoding.UTF8; // oder eine andere Standardkodierung, die der Server verwendet
+                serverEncoding = Encoding.UTF8;
             }
 
             using (var client = new HttpClient())
